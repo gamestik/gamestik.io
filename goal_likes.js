@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
         socket = new WebSocket('ws://localhost:8211');
     
         socket.addEventListener('open', (event) => {
-            console.log('Conexão WebSocket aberta:', event);
+            //console.log('Conexão WebSocket aberta:', event);
     
             // const message = { 'request': 'Hello from client' };
             // socket.send(JSON.stringify(message));
@@ -67,11 +67,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     
         socket.addEventListener('close', (event) => {
-            console.log('Conexão WebSocket fechada:', event);
+            //console.log('Conexão WebSocket fechada:', event);
         });
     
         socket.addEventListener('error', (event) => {
-            console.error('Erro na conexão WebSocket:', event);
+            //console.error('Erro na conexão WebSocket:', event);
         });
     }
     
